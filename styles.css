@@ -114,9 +114,21 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 691px) {
   main,
   #contentCards {
     flex-direction: column;
+  }
+  button {
+    margin-top: 10px;
+  }
+  form {
+    display: inline;
   }
 }

@@ -128,6 +128,25 @@
           </p>
         </div>
       </article>
+      <hr />
+      <h2>Calculadora</h2>
+      <form>
+        <label for="firstNumber"
+          >Primer Número
+          <input type="number" name="firstNumber" id="number1" />
+        </label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="firstNumber"
+          >Segundo Número
+          <input type="number" name="secondNumber" id="number2" />
+        </label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" onclick="sumar()">Sumar</button>
+        <button type="button" onclick="restar()">Restar</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+        <button type="button" onclick="dividir()">Dividir</button>
+      </form>
+      <h3>Resultado : <span id="resultado"></span></h3>
     </div>
     <hr />
 
