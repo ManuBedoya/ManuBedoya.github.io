@@ -45,9 +45,11 @@
     </div>
     <hr />
     <header>
-      <h1>Sobre mi</h1>
+      <div>
+        <h1>Sobre mi</h1>
+      </div>
     </header>
-    <main>
+    <div id="aboutMe">
       <aside>
         <img src="images/miFoto.jpeg" alt="Foto Personal" / height="70%"
         width="60%">
@@ -72,7 +74,7 @@
           que pueda lograr hacer.
         </p>
       </article>
-    </main>
+    </div>
     <hr />
     <div>
       <h2>Proyectos</h2>
@@ -83,7 +85,7 @@
             alt="Colombian Tourism"
             style="width: 100%;"
           />
-          <h1>Recuerda tu inglés</h1>
+          <h2>Recuerda tu inglés</h2>
 
           <p>
             Es una pagina web pensado como un apoyo para el aprendizaje del
@@ -101,7 +103,7 @@
             alt="Colombian Tourism"
             style="width: 100%;"
           />
-          <h1>Colombian Tourism</h1>
+          <h2>Colombian Tourism</h2>
 
           <p>
             Es una pagina web sobre el turismo en colombia , el cual tiene
@@ -117,7 +119,7 @@
             alt="Colombian Tourism"
             style="width: 100%;"
           />
-          <h1>Bases de datos</h1>
+          <h2>Bases de datos</h2>
 
           <p>
             Es una pagina web en la que se administran datos de una empresa ,
@@ -129,24 +131,26 @@
         </div>
       </article>
       <hr />
-      <h2>Calculadora</h2>
-      <form>
-        <label for="firstNumber"
-          >Primer Número
-          <input type="number" name="firstNumber" id="number1" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="firstNumber"
-          >Segundo Número
-          <input type="number" name="secondNumber" id="number2" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button type="button" onclick="sumar()">Sumar</button>
-        <button type="button" onclick="restar()">Restar</button>
-        <button type="button" onclick="multiplicar()">Multiplicar</button>
-        <button type="button" onclick="dividir()">Dividir</button>
-      </form>
-      <h3>Resultado : <span id="resultado"></span></h3>
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <form>
+          <label for="firstNumber"
+            >Primer Número
+            <input type="number" name="firstNumber" id="number1" />
+          </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="firstNumber"
+            >Segundo Número
+            <input type="number" name="secondNumber" id="number2" />
+          </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" onclick="sumar()">Sumar</button>
+          <button type="button" onclick="restar()">Restar</button>
+          <button type="button" onclick="multiplicar()">Multiplicar</button>
+          <button type="button" onclick="dividir()">Dividir</button>
+        </form>
+        <h3>Resultado : <span id="resultado"></span></h3>
+      </div>
     </div>
     <hr />
 
