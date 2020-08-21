@@ -57,3 +57,18 @@ function asignarValores() {
   firstNumber = document.getElementById("number1").value;
   secondNumber = document.getElementById("number2").value;
 }
+
+function verResultado() {
+  try {
+    eval(document.calculator.ans.value);
+  } catch (error) {
+    alert("Usted ha ingresado una expresión incorrecta o valores no númericos");
+    return;
+  }
+
+  if (eval(document.calculator.ans.value) == "Infinity") {
+    alert("No se puede dividir un número entre 0");
+  } else {
+    document.calculator.ans.value = eval(document.calculator.ans.value);
+  }
+}
